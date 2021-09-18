@@ -1,0 +1,98 @@
+input:focus + label, input:not(:placeholder-shown) + label {
+  position: relative;
+  bottom: 84px;
+  left: 16px;
+  font-size: 16px;
+}
+
+input:focus-within {
+  //color: red;
+
+}
+
+label, input {
+  transition: all 0.3s ease;
+}
+
+label {
+  pointer-events: none;
+  color: #757575;
+  position: relative;
+  bottom: 61px;
+  left: 9px;
+  z-index: 2;
+  font-size: 24px;
+}
+
+input {
+  z-index: 1;
+  border-radius: 4px;
+  border: 1px solid #D5D5D5;
+  padding: 4px 4px 4px 16px;
+  outline: none;
+  height: 80px;
+  font-size: 20px;
+  width: -webkit-fill-available;
+  position: relative;
+  //padding-left: 16px;
+}
+
+@media (min-width: 769px) {
+  .grouped {
+    //margin-top: 32px;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .group-1 {
+      width: 35%;
+      margin-right: 32px;
+    }
+
+    .group-2 {
+      width: 65%;
+    }
+  }
+
+  label {
+    pointer-events: none;
+    color: #757575;
+    position: relative;
+    bottom: 61px;
+    left: 9px;
+    z-index: 2;
+    font-size: 24px;
+  }
+
+  input:focus + label, input:not(:placeholder-shown) + label {
+    position: relative;
+    bottom: 84px;
+    left: 16px;
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 414px) {
+  .form-group {
+
+  }
+
+  label {
+    pointer-events: none;
+    color: #757575;
+    position: relative;
+    bottom: 61px;
+    left: 9px;
+    z-index: 2;
+    font-size: 24px;
+  }
+
+  input:focus + label, input:not(:placeholder-shown) + label {
+    position: relative;
+    bottom: 84px;
+    left: 16px;
+    font-size: 16px;
+  }
+}

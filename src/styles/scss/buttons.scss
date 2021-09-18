@@ -1,0 +1,55 @@
+.block-btn {
+  background-color: #FC732F;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.outline-btn {
+  background-color: white;
+  border: 2px solid #FC732F;
+  color: #FC732F;
+}
+
+a.button2 {
+  display: inline-block;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.15s;
+  text-decoration: none;
+  //margin: 0 0.3em 0.3em 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: bold;
+  line-height: 18px;
+  @media (min-width: 415px) {
+    margin-right: 32px;
+  }
+}
+
+.buttons {
+  @media (min-width: 769px) {
+    display: flex;
+    justify-content: start;
+    margin: 32px 186px;
+  }
+}
+
+@media (max-width: 768px) {
+  a.block-btn {
+    margin-left: 60px;
+    margin-top: 32px;
+  }
+}
+
+
+@media (max-width: 415px) {
+  a.block-btn {
+    display: block;
+    margin: 32px;
+  }
+  a.outline-btn {
+    display: block;
+    margin: 32px;
+  }
+}
